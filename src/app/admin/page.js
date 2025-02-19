@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
+
 import {
   LineChart,
   Line,
@@ -726,11 +728,7 @@ const Dashboard = () => {
             <h2 className="text-2xl font-bold text-black">
               {activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}
             </h2>
-            <img
-              src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=320,fit=crop,q=95/AzGeNv8QxRTqXJan/20241226_222044-AwvDvRazrEUZ8ZMp.png"
-              alt="Admin"
-              className="w-11 h-11 rounded-full"
-            />
+            
           </div>
           {activeTab === "dashboard" && renderDashboard()}
           {activeTab === "services" && renderServices()}
