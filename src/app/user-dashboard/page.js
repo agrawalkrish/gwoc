@@ -9,9 +9,7 @@ import {
   Edit,
   Save,
   LogOut,
-  Upload,
-  Check,
-  X,
+  Upload
 } from "lucide-react";
 
 const UserDashboard = () => {
@@ -26,21 +24,21 @@ const UserDashboard = () => {
     address: "123, Main Street, Mumbai, India",
   });
   const [isEditing, setIsEditing] = useState(false);
-  const [wallet, setWallet] = useState({
+  const [wallet] = useState({
     balance: 1500,
     transactions: [
       { id: 1, type: "debit", amount: 500, description: "AC Repair Service", date: "2023-10-01" },
       { id: 2, type: "credit", amount: 200, description: "Referral Bonus", date: "2023-10-05" },
     ],
   });
-  const [orders, setOrders] = useState([
+  const [orders] = useState([
     { id: 1, service: "AC Repair", date: "2023-10-01", status: "Completed", amount: 500 },
     { id: 2, service: "Plumbing", date: "2023-10-03", status: "In Progress", amount: 300 },
   ]);
   const [ratings, setRatings] = useState([
     { id: 1, service: "AC Repair", partner: "Rajesh Kumar", rating: 4, feedback: "Great service!" },
   ]);
-  const [referrals, setReferrals] = useState([
+  const [referrals] = useState([
     { id: 1, code: "HELPER123", usedBy: "user2@example.com", earnings: 200 },
   ]);
 

@@ -3,7 +3,6 @@
 import { useState,useEffect } from "react";
 
 import { FaRegUserCircle } from "react-icons/fa";
-import { MdOutlineShoppingBag } from "react-icons/md";
 import TestimonialSection from '@/app/Testimonial/testimonial';
 import BlogSection from '@/app/blogsection/blog-section';
 import AboutUs from '@/app/about/page';

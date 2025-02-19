@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { Mail, Phone, Eye, EyeOff, User } from "lucide-react";
+import { Mail, Phone, Eye, EyeOff } from "lucide-react";
 
 export default function SignInPage() {
   const router = useRouter();

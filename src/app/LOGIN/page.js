@@ -1,6 +1,6 @@
 'use client';
 import { useState, useRef } from 'react';
-import { Phone, Lock, ArrowRight } from 'lucide-react';
+
 import { LoginComp } from '../components/LoginComp';
 export default function LoginPage() {
   const [step, setStep] = useState('login'); // 'login', 'enter-phone', 'enter-otp', 'enter-new-password', 'verified'

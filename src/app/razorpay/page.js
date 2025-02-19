@@ -2,8 +2,6 @@
 import { useState } from 'react';
 
 const PaymentPage = () => {
-  const [order, setOrder] = useState(null);
-
   const handlePayment = async () => {
     try {
       const res = await fetch('http://localhost:3000/api/create-order', {
@@ -18,11 +16,10 @@ const PaymentPage = () => {
       }
 
       const data = await res.json();
-      setOrder(data);
 
       if (!data.error) {
         const options = {
-          key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID, // Enter the Key ID generated from the Dashboard
+          key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
           amount: data.amount,
           currency: data.currency,
           name: 'Your Company Name',
